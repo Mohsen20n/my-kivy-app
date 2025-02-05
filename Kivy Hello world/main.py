@@ -1,14 +1,10 @@
-import kivy
 
 from kivy.app import App
-from kivy.uix.button import Button
+from kivy.uix.label import Label
 
-
-class MyApp(App):
-
+class SimpleKivyApp(App):
     def build(self):
-        return Button(text='Hello World')
-
+        return Label(text='سلام، Kivy!')
 
 if __name__ == '__main__':
-    MyApp().run()
+    SimpleKivyApp().run()
